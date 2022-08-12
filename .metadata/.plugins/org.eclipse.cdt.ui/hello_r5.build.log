@@ -1,0 +1,26 @@
+16:16:08 **** Build of configuration Debug for project hello_r5 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/jkl-rpu/workspace_mpsoc_preset/zcu106_edt/export/zcu106_edt/sw/zcu106_edt/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/jkl-rpu/workspace_mpsoc_preset/zcu106_edt/export/zcu106_edt/sw/zcu106_edt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: hello_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -L/home/jkl-rpu/workspace_mpsoc_preset/zcu106_edt/export/zcu106_edt/sw/zcu106_edt/standalone_domain/bsplib/lib -o "hello_r5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hello_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size hello_r5.elf  |tee "hello_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9545	   1528	  22580	  33653	   8375	hello_r5.elf
+Finished building: hello_r5.elf.size
+ 
+
+16:16:09 Build Finished (took 1s.57ms)
+

@@ -1,0 +1,2 @@
+void printint(int);
+

@@ -1,0 +1,26 @@
+14:42:19 **** Build of configuration Debug for project mpsoc_preset ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/jkl-rpu/workspace_mpsoc_preset/mpsoc_preset_wrapper/export/mpsoc_preset_wrapper/sw/mpsoc_preset_wrapper/standalone_psu_cortexr5_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/jkl-rpu/workspace_mpsoc_preset/mpsoc_preset_wrapper/export/mpsoc_preset_wrapper/sw/mpsoc_preset_wrapper/standalone_psu_cortexr5_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: mpsoc_preset.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -L/home/jkl-rpu/workspace_mpsoc_preset/mpsoc_preset_wrapper/export/mpsoc_preset_wrapper/sw/mpsoc_preset_wrapper/standalone_psu_cortexr5_0/bsplib/lib -o "mpsoc_preset.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mpsoc_preset.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size mpsoc_preset.elf  |tee "mpsoc_preset.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9545	   1528	  22580	  33653	   8375	mpsoc_preset.elf
+Finished building: mpsoc_preset.elf.size
+ 
+
+14:42:20 Build Finished (took 1s.38ms)
+

@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/edt_zcu106/ip/edt_zcu106_axi_timer_0_0/sim/edt_zcu106_axi_timer_0_0.vhd" \
+"../../../bd/edt_zcu106/ip/edt_zcu106_axi_gpio_0_0/sim/edt_zcu106_axi_gpio_0_0.vhd" \
+"../../../bd/edt_zcu106/ip/edt_zcu106_axi_gpio_0_1/sim/edt_zcu106_axi_gpio_0_1.vhd" \
+"../../../bd/edt_zcu106/ip/edt_zcu106_rst_ps8_0_99M_0/sim/edt_zcu106_rst_ps8_0_99M_0.vhd" \
+
+nosort

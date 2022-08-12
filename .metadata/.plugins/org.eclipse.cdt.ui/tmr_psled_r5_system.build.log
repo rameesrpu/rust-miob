@@ -1,0 +1,10 @@
+19:38:36 **** Incremental Build of configuration Debug for project tmr_psled_r5_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/jkl-rpu/workspace_mpsoc_preset/edt_zcu106_wrapper/export/edt_zcu106_wrapper/edt_zcu106_wrapper.xpfm -domains standalone_psu_cortexr5_0 -bifpath /home/jkl-rpu/workspace_mpsoc_preset/tmr_psled_r5_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/jkl-rpu/workspace_mpsoc_preset/edt_zcu106_wrapper/export/edt_zcu106_wrapper/edt_zcu106_wrapper.xpfm --sys_config edt_zcu106_wrapper --bif /home/jkl-rpu/workspace_mpsoc_preset/tmr_psled_r5_system/Debug/system.bif --bitstream /home/jkl-rpu/workspace_mpsoc_preset/tmr_psled_r5/_ide/bitstream/edt_zcu106_wrapper.bit --elf /home/jkl-rpu/workspace_mpsoc_preset/tmr_psled_r5/Debug/tmr_psled_r5.elf,psu_cortexr5_0
+creating BOOT.BIN using /home/jkl-rpu/workspace_mpsoc_preset/tmr_psled_r5/_ide/bitstream/edt_zcu106_wrapper.bit
+Running /global/software/vitis/Vitis/2021.2/bin/bootgen -arch zynqmp -image /home/jkl-rpu/workspace_mpsoc_preset/tmr_psled_r5_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+19:38:45 Build Finished (took 8s.740ms)
+

@@ -1,0 +1,20 @@
+Nothing to build in platform 'edt_zcu106_wrapper'
+
+17:38:35 **** Incremental Build of configuration Debug for project tmr_psled_r5 ****
+make all 
+Building file: ../src/timer_psled_r5.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_psled_r5.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/jkl-rpu/workspace_mpsoc_preset/edt_zcu106_wrapper/export/edt_zcu106_wrapper/sw/edt_zcu106_wrapper/standalone_psu_cortexr5_0/bspinclude/include -MMD -MP -MF"src/timer_psled_r5.d" -MT"src/timer_psled_r5.o" -o "src/timer_psled_r5.o" "../src/timer_psled_r5.c"
+Finished building: ../src/timer_psled_r5.c
+ 
+Building target: tmr_psled_r5.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -L/home/jkl-rpu/workspace_mpsoc_preset/edt_zcu106_wrapper/export/edt_zcu106_wrapper/sw/edt_zcu106_wrapper/standalone_psu_cortexr5_0/bsplib/lib -o "tmr_psled_r5.elf"  ./src/timer_psled_r5.o ./src/printint.o ./src/systime.o ./src/rustcode.o  -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: tmr_psled_r5.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size tmr_psled_r5.elf  |tee "tmr_psled_r5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33581	   3512	  22828	  59921	   ea11	tmr_psled_r5.elf
+Finished building: tmr_psled_r5.elf.size
+ 

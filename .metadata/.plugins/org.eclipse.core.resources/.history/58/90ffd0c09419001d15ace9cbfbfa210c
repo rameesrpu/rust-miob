@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="tmr_psled_r5" location="/home/jkl-rpu/workspace_mpsoc_preset/tmr_psled_r5" platform="/home/jkl-rpu/workspace_mpsoc_preset/edt_zcu106_wrapper/export/edt_zcu106_wrapper/edt_zcu106_wrapper.xpfm" platformUID="xilinx:zcu106::0.0(custom)" systemProject="tmr_psled_r5_system" sysConfig="edt_zcu106_wrapper" runtime="cpp" cpu="standalone_psu_cortexr5_0" cpuInstance="psu_cortexr5_0" os="standalone" mssSignature="5b54febd269ed4a14a3d0ccc94d71936">
+  <configuration name="Debug" id="xilinx.gnu.arm.r5.exe.debug.135744685">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.r5.exe.release.705151579" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

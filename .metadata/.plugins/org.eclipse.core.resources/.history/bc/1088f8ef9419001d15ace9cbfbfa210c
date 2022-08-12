@@ -1,0 +1,34 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+LD_SRCS += \
+../src/lscript.ld 
+
+C_SRCS += \
+../src/timer_psled_r5.c 
+
+OBJS += \
+./src/timer_psled_r5.o \
+./src/rustcode.o
+
+C_DEPS += \
+./src/timer_psled_r5.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/%.o: ../src/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: ARM R5 gcc compiler'
+	armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/home/jkl-rpu/workspace_mpsoc_preset/edt_zcu106_wrapper/export/edt_zcu106_wrapper/sw/edt_zcu106_wrapper/standalone_psu_cortexr5_0/bspinclude/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
+src/%.o: ../src/%.rs
+	@echo 'Building file: $<'
+	@echo 'Invoking: Rustc Cross-Compiler for ARMv7R'
+	cargo --emit=obj --target=armv7r-none-eabihf -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
